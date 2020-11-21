@@ -28,9 +28,15 @@ kubectl -n kube-system get pods -l k8s-app=cilium
 kubectl apply -f apps/nginx.yaml
 ```
 
+```
+kubectl create -f cilium_policies/deny.yaml
+```
+
 ### cilium commands
 
 ```
 kubectl exec -n kube-system  cilium-cxpxm -- cilium policy get
 ```
+
+
 
