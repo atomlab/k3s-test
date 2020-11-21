@@ -22,7 +22,10 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 
 ```
 kubectl -n kube-system get pods -l k8s-app=cilium
+```
 
+```
+kubectl apply -f apps/nginx.yaml
 ```
 
 ### cilium commands
