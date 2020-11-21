@@ -31,7 +31,6 @@ kubectl apply -f apps/nginx.yaml
 ### cilium commands
 
 ```
-```
+kubectl exec -n kube-system  cilium-cxpxm -- cilium policy get
 ```
 
-```
