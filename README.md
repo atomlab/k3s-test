@@ -18,6 +18,12 @@ install helm
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 ```
 
+Setup Helm repository
+
+```
+helm repo add cilium https://helm.cilium.io/
+```
+
 ### kubectl
 
 ```
