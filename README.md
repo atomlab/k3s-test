@@ -81,4 +81,11 @@ kubectl get pods -l app=nginx
 kubectl get pods -l app=nginx -o wide
 ```
 
+```
+kubectl expose deployment nginx-deployment --type=NodePort --port=80
+```
+
+```
+kubectl get svc nginx-deployment
+```
 
