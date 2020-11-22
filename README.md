@@ -53,15 +53,15 @@ kubectl -n kube-system get pods --watch
 ### cilium commands
 
 ```
-kubectl exec -n kube-system  cilium-cxpxm -- cilium policy get
+kubectl exec -n kube-system  cilium-xxxx -- cilium policy get
 ```
 
 ```
-kubectl exec -it -n kube-system cilium-p5dcp -- cilium service  list
+kubectl exec -it -n kube-system cilium-xxxx -- cilium service  list
 ```
 
 ```
-kubectl exec -it -n kube-system cilium-cxpxm -- cilium status
+kubectl exec -it -n kube-system cilium-xxxx -- cilium status
 ```
 
 
