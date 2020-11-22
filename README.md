@@ -48,6 +48,10 @@ kubectl create -f cilium_policies/deny.yaml
 kubectl exec -it -n kube-system cilium-cxpxm -- cilium status
 ```
 
+```
+kubectl -n kube-system get pods --watch
+```
+
 ### cilium commands
 
 ```
