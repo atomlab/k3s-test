@@ -18,7 +18,7 @@ helm repo add cilium https://helm.cilium.io/
 
 Install cilium with the portmap plugin enabled
 ```
-KUBECONFIG=/etc/rancher/k3s/k3s.yaml helm install cilium cilium/cilium --version 1.9.0 --namespace=kube-system --set cni.chainingMode=portmap
+KUBECONFIG=/etc/rancher/k3s/k3s.yaml helm install cilium cilium/cilium --version 1.9.0 --namespace=kube-system 
 ```
 
 ```
