@@ -44,9 +44,7 @@ kubectl get pods -l app=nginx
 kubectl create -f cilium_policies/deny.yaml
 ```
 
-```
-kubectl exec -it -n kube-system cilium-cxpxm -- cilium status
-```
+
 
 ```
 kubectl -n kube-system get pods --watch
@@ -57,6 +55,15 @@ kubectl -n kube-system get pods --watch
 ```
 kubectl exec -n kube-system  cilium-cxpxm -- cilium policy get
 ```
+
+```
+kubectl exec -it -n kube-system cilium-p5dcp -- cilium service  list
+```
+
+```
+kubectl exec -it -n kube-system cilium-cxpxm -- cilium status
+```
+
 
 
 
