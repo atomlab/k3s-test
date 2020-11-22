@@ -70,6 +70,10 @@ kubectl exec -it -n kube-system cilium-xxxx -- cilium status
 kubectl exec -it -n kube-system cilium-p5dcp -- cilium  endpoint list
 ```
 
+### Setup
 
+```
+echo KUBELET_EXTRA_ARGS="--node-ip=$(ip -4 -o a show eth0 | awk '{print $4}' | cut -d/ -f1)" | tee -a /etc/default/kubelet
+```
 
 
