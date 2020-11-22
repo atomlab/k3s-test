@@ -64,6 +64,10 @@ kubectl exec -it -n kube-system cilium-xxxx -- cilium service  list
 kubectl exec -it -n kube-system cilium-xxxx -- cilium status
 ```
 
+```
+ kubectl exec -it -n kube-system cilium-p5dcp -- cilium  endpoint list
+ ```
+
 
 
 
