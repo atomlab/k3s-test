@@ -1,4 +1,11 @@
 # k3s-test
+
+With lxd
+```
+mount bpffs -t bpf /sys/fs/bpf
+mount --make-rshared 
+```
+
 k3s
 ```
 curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v1.19.3+k3s2 INSTALL_K3S_EXEC='--flannel-backend=none --no-flannel' sh -
