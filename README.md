@@ -44,10 +44,12 @@ kubectl get pods -l app=nginx
 kubectl create -f cilium_policies/deny.yaml
 ```
 
-
-
 ```
 kubectl -n kube-system get pods --watch
+```
+
+```
+kubectl get service --all-namespaces
 ```
 
 ### cilium commands
