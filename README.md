@@ -100,3 +100,17 @@ kubectl expose deployment nginx-deployment --type=NodePort --port=80
 kubectl get svc nginx-deployment
 ```
 
+## Consul
+
+```
+helm repo add hashicorp https://helm.releases.hashicorp.com
+```
+
+```
+helm search repo hashicorp/consul
+```
+
+```
+helm upgrade consul hashicorp/consul -f consul/config.yml
+```
+
