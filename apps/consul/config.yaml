@@ -1,0 +1,9 @@
+global:
+  enabled: false
+client:
+  enabled: true
+  # Set this to true to expose the Consul clients using the Kubernetes node
+  # IPs. If false, the pod IPs must be routable from the external servers.
+  exposeGossipPorts: true
+  join:
+    - "EXTERNAL_CONSUL_MASTER_HOST"
