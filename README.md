@@ -1,6 +1,6 @@
 # k3s-test
 
-With lxd
+With lxd. Inside lxc container.
 ```
 mount bpffs -t bpf /sys/fs/bpf
 mount --make-rshared 
