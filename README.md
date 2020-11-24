@@ -23,7 +23,7 @@ Setup Helm repository
 helm repo add cilium https://helm.cilium.io/
 ```
 
-Install cilium with the portmap plugin enabled
+Install cilium
 ```
 KUBECONFIG=/etc/rancher/k3s/k3s.yaml helm install cilium cilium/cilium --version 1.9.0 --namespace=kube-system 
 ```
