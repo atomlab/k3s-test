@@ -3,7 +3,7 @@
 With lxd. Inside lxc container.
 ```
 mount bpffs -t bpf /sys/fs/bpf
-mount --make-rshared 
+mount --make-rshared /sys/fs/bpf
 ```
 
 k3s
